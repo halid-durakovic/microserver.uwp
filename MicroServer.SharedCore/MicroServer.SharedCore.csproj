@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3B1449C-2D51-40FF-9037-5BD1CCB46D29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MicroServer</RootNamespace>
+    <AssemblyName>MicroServer.SharedCore</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logging\ILogEntryFilter.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILoggerFilter.cs" />
+    <Compile Include="Logging\ILogProvider.cs" />
+    <Compile Include="Logging\LogEntry.cs" />
+    <Compile Include="Logging\Loggers\BaseLogger.cs" />
+    <Compile Include="Logging\Loggers\CompositeLogger.cs" />
+    <Compile Include="Logging\Loggers\Filters\ExceptionsOnly.cs" />
+    <Compile Include="Logging\Loggers\Filters\LogLevelFilter.cs" />
+    <Compile Include="Logging\Loggers\Filters\NamespaceDoc.cs" />
+    <Compile Include="Logging\Loggers\Filters\NoFilter.cs" />
+    <Compile Include="Logging\Loggers\NamespaceDoc.cs" />
+    <Compile Include="Logging\Loggers\NullLogger.cs" />
+    <Compile Include="Logging\Loggers\SystemDebugLogger.cs" />
+    <Compile Include="Logging\LogLevel.cs" />
+    <Compile Include="Logging\LogManager.cs" />
+    <Compile Include="Logging\NamespaceDoc.cs" />
+    <Compile Include="Logging\Providers\LogProvider.cs" />
+    <Compile Include="Logging\Providers\NamespaceDoc.cs" />
+    <Compile Include="Logging\Providers\NamespaceFilter.cs" />
+    <Compile Include="Logging\Providers\NoFilter.cs" />
+    <Compile Include="Logging\Providers\NullLogProvider.cs" />
+    <Compile Include="Networking\Web\Authentication\AuthenticationModule.cs" />
+    <Compile Include="Networking\Web\Authentication\BasicAuthentication.cs" />
+    <Compile Include="Networking\Web\Authentication\IAccountService.cs" />
+    <Compile Include="Networking\Web\Authentication\IAuthenticationUser.cs" />
+    <Compile Include="Networking\Web\Authentication\IAuthenticator.cs" />
+    <Compile Include="Networking\Web\ControllerModule.cs" />
+    <Compile Include="Networking\Web\ErrorModule.cs" />
+    <Compile Include="Networking\Web\Files\FileContext.cs" />
+    <Compile Include="Networking\Web\Files\IFileService.cs" />
+    <Compile Include="Networking\Web\Files\MimeTypeProvider.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionResults\HttpStatusCodeResult.cs" />
+    <Compile Include="Networking\Web\Mvc\ControllerBase.cs" />
+    <Compile Include="Networking\Web\Mvc\WebSocketController.cs" />
+    <Compile Include="Networking\Web\WebSocketContent.cs" />
+    <Compile Include="Networking\Web\IWebSocketService.cs" />
+    <Compile Include="Networking\Web\WebSocketModule.cs" />
+    <Compile Include="Networking\Web\FileModule.cs" />
+    <Compile Include="Networking\Web\HtmlFactory.cs" />
+    <Compile Include="Networking\Web\HttpContext.cs" />
+    <Compile Include="Networking\Web\HttpException.cs" />
+    <Compile Include="Networking\Web\HttpServer.cs" />
+    <Compile Include="Networking\Web\HttpServer\ClientConnectedEventArgs.cs" />
+    <Compile Include="Networking\Web\HttpServer\ClientDisconnectedEventArgs.cs" />
+    <Compile Include="Networking\Web\HttpServer\DisconnectHandler.cs" />
+    <Compile Include="Networking\Web\HttpServer\ErrorHandler.cs" />
+    <Compile Include="Networking\Web\HttpContextContent.cs" />
+    <Compile Include="Networking\Web\IHttpContext.cs" />
+    <Compile Include="Networking\Web\IModuleManager.cs" />
+    <Compile Include="Networking\Web\IServiceResolver.cs" />
+    <Compile Include="Networking\Web\ModuleManager.cs" />
+    <Compile Include="Networking\Web\Modules\AsyncModuleResult.cs" />
+    <Compile Include="Networking\Web\Modules\AuthenticationModule.cs" />
+    <Compile Include="Networking\Web\Modules\IAsyncModuleResult.cs" />
+    <Compile Include="Networking\Web\Modules\IAuthenticationModule.cs" />
+    <Compile Include="Networking\Web\Modules\IAuthorizationModule.cs" />
+    <Compile Include="Networking\Web\Modules\IHttpModule.cs" />
+    <Compile Include="Networking\Web\Modules\IRoutingModule.cs" />
+    <Compile Include="Networking\Web\Modules\IWorkerModule.cs" />
+    <Compile Include="Networking\Web\Modules\ModuleResult.cs" />
+    <Compile Include="Networking\Web\Modules\NamespaceDoc.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionExecutedContext.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionExecutingContext.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionResult.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionResults\ContentResult.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionResults\EmptyResult.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionResults\JsonResult.cs" />
+    <Compile Include="Networking\Web\Mvc\ActionResults\RedirectResult.cs" />
+    <Compile Include="Networking\Web\Mvc\Controller.cs" />
+    <Compile Include="Networking\Web\Mvc\ControllerContext.cs" />
+    <Compile Include="Networking\Web\Mvc\Controllers\ControllerFactory.cs" />
+    <Compile Include="Networking\Web\Mvc\Controllers\ControllerIndexer.cs" />
+    <Compile Include="Networking\Web\Mvc\Controllers\ControllerMapping.cs" />
+    <Compile Include="Networking\Web\Mvc\ExceptionContext.cs" />
+    <Compile Include="Networking\Web\Mvc\HttpStatusCodeResult.cs" />
+    <Compile Include="Networking\Web\Mvc\IActionResult.cs" />
+    <Compile Include="Networking\Web\Mvc\IController.cs" />
+    <Compile Include="Networking\Web\Mvc\IControllerContext.cs" />
+    <Compile Include="Networking\Web\Mvc\ViewData.cs" />
+    <Compile Include="Networking\Web\Mvc\Views\IViewData.cs" />
+    <Compile Include="Networking\Web\Mvc\Views\TokenEngine.cs" />
+    <Compile Include="Networking\Web\Mvc\Views\ViewDataCollection.cs" />
+    <Compile Include="Networking\Web\RouterModule.cs" />
+    <Compile Include="Networking\Web\Routing\DefaultRoute.cs" />
+    <Compile Include="Networking\Web\Routing\HttpApplication.cs" />
+    <Compile Include="Networking\Web\Routing\MappedRoute.cs" />
+    <Compile Include="Networking\Web\Routing\MatchResult.cs" />
+    <Compile Include="Networking\Web\Routing\NamespaceDoc.cs" />
+    <Compile Include="Networking\Web\Routing\RouteCollection.cs" />
+    <Compile Include="Networking\Web\StorageService.cs" />
+    <Compile Include="Networking\Web\WebSocketService.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketListener.cs" />
+    <Compile Include="Networking\Web\WebSocket\IWebSocketMessage.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketClientConnectedEventArgs.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketClientConnectEventArgs.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketFin.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketFrame.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketMask.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketMessage.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketOpcode.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketRequest.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketResponse.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketRsv.cs" />
+    <Compile Include="Networking\Web\WebSocket\WebSocketUtils.cs" />
+    <Compile Include="Networking\Web\WorkerModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\AppDomain.cs" />
+    <Compile Include="Resolver\FactoryResolver.cs" />
+    <Compile Include="Resolver\IServiceResolver.cs" />
+    <Compile Include="Resolver\ServiceResolver.cs" />
+    <Content Include="Properties\SharedCore.rd.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
